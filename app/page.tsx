@@ -117,6 +117,69 @@ export default function Home() {
           TextText TextText TextText TextText TextText TextText TextText
           TextText TextText TextText TextText TextText TextText Text
         </p>
+        <div className="text-3xl text-white" id="work">
+          Work
+        </div>
+        <p className="text-white">
+          Text TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText Text
+        </p>
+        <p className="text-white">
+          Text TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText Text
+        </p>
+        <p className="text-white">
+          Text TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText Text
+        </p>
+        <p className="text-white">
+          Text TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText Text
+        </p>
+        <p className="text-white">
+          Text TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText Text
+        </p>
+        <p className="text-white">
+          Text TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText Text
+        </p>
+        <p className="text-white">
+          Text TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText Text
+        </p>
+        <p className="text-white">
+          Text TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText Text
+        </p>
+        <p className="text-white">
+          Text TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText Text
+        </p>
+        <p className="text-white">
+          Text TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText Text
+        </p>
+        <p className="text-white">
+          Text TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText Text
+        </p>
+        <p className="text-white">
+          Text TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText TextText
+          TextText TextText TextText TextText TextText TextText Text
+        </p>
       </main>
     </>
   );
