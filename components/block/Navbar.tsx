@@ -11,7 +11,7 @@ const links = [
 
 export const Navbar = () => {
   return (
-    <div className="flex w-full flex-row items-center justify-between bg-zinc-800 p-2">
+    <div className="absolute flex w-full flex-row items-center justify-between border-b border-b-zinc-500 bg-zinc-800 bg-opacity-65 p-2 backdrop-blur-sm backdrop-saturate-150 backdrop-filter">
       <Logo />
       <Links />
     </div>
