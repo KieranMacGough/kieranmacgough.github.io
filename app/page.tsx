@@ -1,181 +1,25 @@
+import { Hero } from "@/components/block/Hero";
 import { Navbar } from "@/components/block/Navbar";
+import { TechStack } from "@/components/block/TechStack";
 
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center justify-between bg-zinc-900">
+      <main className="flex min-h-screen flex-col items-center justify-between bg-zinc-900 px-5 md:px-20">
         <Navbar />
-        <p className="text-white">
+        <Hero />
+        <TechStack />
+        <p className="h-dvh">
           Text TextText TextText TextText TextText TextText TextText TextText
           TextText TextText TextText TextText TextText TextText TextText
           TextText TextText TextText TextText TextText TextText Text
         </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextTefsdfsadextText TextText TextText TextText TextText
-          TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextfsdtText TextText TextText TextText TextText
-          TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
+        <p className="h-dvh">
           Text TextText TextText TextText TextText TextText TextText TextText
           TextText TextText TextText TextText TextText TextText TextText
           TextText TextText TextText TextText TextText TextText Text
         </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">11111111111111</p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">2222222222222222</p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <div className="text-3xl text-white" id="work">
-          Work
-        </div>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
-          Text TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText TextText
-          TextText TextText TextText TextText TextText TextText Text
-        </p>
-        <p className="text-white">
+        <p className="h-dvh">
           Text TextText TextText TextText TextText TextText TextText TextText
           TextText TextText TextText TextText TextText TextText TextText
           TextText TextText TextText TextText TextText TextText Text

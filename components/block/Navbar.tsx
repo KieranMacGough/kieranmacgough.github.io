@@ -3,9 +3,10 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import KMlogo from "../../images/KmLogo.png";
+import { Container } from "../ui/Container";
 
 const links = [
-  { href: "#aboutme", label: "About Me" },
+  { href: "#tech", label: "Tech Stack" },
   { href: "#work", label: "Work" },
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
@@ -36,10 +37,14 @@ export const Navbar = () => {
     <header
       className={`${
         visible ? "top-0" : "top-[-56px]"
-      } fixed flex h-14 w-full flex-row items-center justify-between border-b border-b-zinc-500 bg-zinc-800 bg-opacity-65 p-4 backdrop-blur-sm backdrop-saturate-150 backdrop-filter transition-[top_ease-in-out] duration-500`}
+      } fixed w-full border-b border-b-zinc-500 bg-zinc-800 bg-opacity-65 backdrop-blur-sm backdrop-saturate-150 backdrop-filter transition-[top_ease-in-out] duration-500`}
     >
-      <Logo />
-      <Links />
+      <Container>
+        <div className="flex h-14 w-full flex-row items-center justify-between py-4 max-[1200px]:px-4 ">
+          <Logo />
+          <Links />
+        </div>
+      </Container>
     </header>
   );
 };
@@ -69,7 +74,7 @@ const Link: React.FC<LinkProps> = ({ num, label, href }) => {
   return (
     <a
       href={href}
-      className="h-auto cursor-pointer text-xs text-orange-400 hover:text-white"
+      className="text-primary h-auto cursor-pointer text-xs hover:text-white"
     >
       <span className="text-white">//</span>
       {" " + label}
@@ -79,7 +84,7 @@ const Link: React.FC<LinkProps> = ({ num, label, href }) => {
 
 const ResumeButton = () => {
   return (
-    <button className="me-2 rounded border border-orange-400 bg-gray-700 px-2.5 py-0.5 text-xs  font-medium text-orange-400 hover:bg-orange-400 hover:text-gray-700">
+    <button className="border-primary text-primary hover:bg-primary me-2 rounded border bg-gray-900 px-2.5  py-0.5 text-xs font-medium hover:text-gray-900">
       Resume
     </button>
   );
