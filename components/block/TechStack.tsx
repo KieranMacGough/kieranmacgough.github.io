@@ -10,9 +10,11 @@ import {
   SiReact,
   SiPlanetscale,
   SiGithub,
+  SiStorybook,
 } from "react-icons/si";
 
 import { Container } from "../ui/Container";
+import { BlockHeader } from "../ui/BlockHeader";
 
 const TechList = [
   {
@@ -55,6 +57,10 @@ const TechList = [
     icon: <SiGithub size={24} />,
     name: "Github",
   },
+  {
+    icon: <SiStorybook size={24} />,
+    name: "Storybook",
+  },
 ];
 
 export const TechStack = () => {
@@ -62,12 +68,10 @@ export const TechStack = () => {
     <Container>
       <div
         id="tech"
-        className="flex h-dvh flex-col items-center justify-center"
+        className="flex min-h-dvh flex-col items-center justify-center"
       >
-        <h2 className=" pb-10 text-5xl text-white">
-          <span className="text-primary text-6xl">{"// "}</span>Tech Stack
-        </h2>
-        <div className="border-primary flex max-w-2xl flex-row flex-wrap justify-center gap-5 rounded-lg border bg-teal-950 p-5">
+        <BlockHeader>Tech Stack</BlockHeader>
+        <div className="border-primary flex max-w-3xl flex-row flex-wrap justify-center gap-5 rounded-lg border bg-teal-950 p-5">
           {TechList.map((tech, i) => (
             <Tech key={i} icon={tech.icon} name={tech.name} />
           ))}

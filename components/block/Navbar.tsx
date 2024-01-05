@@ -37,7 +37,7 @@ export const Navbar = () => {
     <header
       className={`${
         visible ? "top-0" : "top-[-56px]"
-      } fixed w-full border-b border-b-zinc-500 bg-zinc-800 bg-opacity-65 backdrop-blur-sm backdrop-saturate-150 backdrop-filter transition-[top_ease-in-out] duration-500`}
+      } fixed z-50 w-full border-b border-b-zinc-500 bg-zinc-800 bg-opacity-65 backdrop-blur-sm backdrop-saturate-150 backdrop-filter transition-[top_ease-in-out] duration-500`}
     >
       <Container>
         <div className="flex h-14 w-full flex-row items-center justify-between py-4 max-[1200px]:px-4 ">
@@ -57,7 +57,7 @@ const Links = () => {
   return (
     <div className="flex items-center gap-6">
       {links.map((link, i) => (
-        <Link num={i} label={link.label} href={link.href} />
+        <Link key={i} num={i} label={link.label} href={link.href} />
       ))}
       <ResumeButton />
     </div>
