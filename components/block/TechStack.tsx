@@ -65,19 +65,21 @@ const TechList = [
 
 export const TechStack = () => {
   return (
-    <Container>
-      <div
-        id="tech"
-        className="flex min-h-dvh flex-col items-center justify-center"
-      >
-        <BlockHeader>Tech Stack</BlockHeader>
-        <div className="border-primary flex max-w-3xl flex-row flex-wrap justify-center gap-5 rounded-lg border bg-teal-950 p-5">
-          {TechList.map((tech, i) => (
-            <Tech key={i} icon={tech.icon} name={tech.name} />
-          ))}
+    <div className="w-full bg-zinc-700">
+      <Container>
+        <div
+          id="tech"
+          className="flex min-h-dvh flex-col items-center justify-center"
+        >
+          <BlockHeader>Tech Stack</BlockHeader>
+          <div className="flex w-full max-w-3xl flex-1 flex-col flex-wrap justify-center gap-5 rounded-lg border border-primary bg-teal-950 p-5 sm:flex-initial sm:flex-row">
+            {TechList.map((tech, i) => (
+              <Tech key={i} icon={tech.icon} name={tech.name} />
+            ))}
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 
@@ -88,9 +90,9 @@ interface ITech {
 
 const Tech: React.FC<ITech> = ({ icon, name }) => {
   return (
-    <div className="border-primary text-primary flex flex-row flex-nowrap items-center gap-3 rounded-lg border bg-zinc-900 p-4">
+    <div className="flex flex-row flex-nowrap items-center gap-3 rounded-lg border border-primary bg-zinc-900 p-4 text-primary">
       {icon}
-      <span className="text-primary text-xl">{name}</span>
+      <span className="text-xl text-primary">{name}</span>
     </div>
   );
 };

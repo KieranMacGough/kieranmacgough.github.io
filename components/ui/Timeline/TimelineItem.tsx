@@ -5,13 +5,12 @@ import { Pill } from "../Pill";
 
 interface ITimelineItem {
   data: ITimelineData;
-  id: number;
 }
 
-export const TimelineItem: React.FC<ITimelineItem> = ({ data, id }) => {
+export const TimelineItem: React.FC<ITimelineItem> = ({ data }) => {
   return (
     <div
-      className={`border-primary w-full max-w-[500px] rounded-lg border-2 p-6 text-white`}
+      className={`w-full max-w-[500px] rounded-lg border-2 border-primary p-6 text-white`}
     >
       <div className="flex flex-row items-center justify-start gap-4 pb-3">
         <div className={`overflow-hidden rounded-full border-2 border-white`}>
@@ -25,8 +24,8 @@ export const TimelineItem: React.FC<ITimelineItem> = ({ data, id }) => {
         </div>
         <div>
           <p className="text-xl">{data.name}</p>
-          <p className="text-primary text-xs">{data.title}</p>
-          <p className="text-xs text-gray-500">
+          <p className="text-xs text-primary">{data.title}</p>
+          <p className="text-xs text-zinc-400">
             {data.startDate} - {data.endDate}
           </p>
         </div>
