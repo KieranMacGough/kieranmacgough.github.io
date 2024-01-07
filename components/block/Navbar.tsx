@@ -49,14 +49,12 @@ export const Navbar = () => {
         <div className="flex h-20 w-full flex-row items-center justify-between py-4 max-[1200px]:px-4 ">
           <Logo />
 
-          {/* Desktop Menu */}
           <nav className="hidden items-center gap-6 md:flex">
             {links.map((link, i) => (
               <Link key={i} num={i} label={link.label} href={link.href} />
             ))}
           </nav>
 
-          {/* Mobile Menu */}
           <nav className="flex items-center gap-6 md:hidden">
             <div
               className="h-full rounded-lg border-2 border-primary"
@@ -103,7 +101,7 @@ const Link: React.FC<LinkProps> = ({ num, label, href }) => {
       href={href}
       className="h-auto cursor-pointer text-lg text-primary hover:text-white md:text-base"
     >
-      <span className="text-white">//</span>
+      <span className="text-white">{"//"}</span>
       {" " + label}
     </a>
   );
