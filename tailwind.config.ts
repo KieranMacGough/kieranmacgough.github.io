@@ -21,6 +21,10 @@ const config = {
       colors: {
         primary: "#00fdaf",
       },
+      boxShadow: {
+        heroimagemd: "0 0 40px 0 #00fdaf",
+        heroimagesm: "0 0 25px 0 #00fdaf",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

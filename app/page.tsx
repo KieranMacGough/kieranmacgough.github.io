@@ -1,3 +1,4 @@
+import { Contact } from "@/components/block/Contact";
 import { Hero } from "@/components/block/Hero";
 import { Navbar } from "@/components/block/Navbar";
 import { Projects } from "@/components/block/Projects";
@@ -13,6 +14,7 @@ export default function Home() {
         <TechStack />
         <Work />
         <Projects />
+        <Contact />
       </main>
     </>
   );
