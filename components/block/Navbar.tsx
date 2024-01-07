@@ -5,6 +5,8 @@ import Image from "next/image";
 import KMlogo from "../../images/KmLogo.png";
 import { Container } from "../ui/Container";
 import { Anchor } from "../ui/Anchor";
+import { CgCode } from "react-icons/cg";
+import { CgCodeSlash } from "react-icons/cg";
 
 const links = [
   { href: "#tech", label: "Tech Stack" },
@@ -17,11 +19,14 @@ export const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
 
     if (currentScrollPos > prevScrollPos) {
       setVisible(false);
+      setShowMobileMenu(false);
     } else {
       setVisible(true);
     }
@@ -43,7 +48,35 @@ export const Navbar = () => {
       <Container paddingTop={false} paddingBottom={false}>
         <div className="flex h-20 w-full flex-row items-center justify-between py-4 max-[1200px]:px-4 ">
           <Logo />
-          <Links />
+
+          {/* Desktop Menu */}
+          <nav className="hidden items-center gap-6 md:flex">
+            {links.map((link, i) => (
+              <Link key={i} num={i} label={link.label} href={link.href} />
+            ))}
+          </nav>
+
+          {/* Mobile Menu */}
+          <nav className="flex items-center gap-6 md:hidden">
+            <div
+              className="h-full rounded-lg border-2 border-primary"
+              onClick={() => setShowMobileMenu(!showMobileMenu)}
+            >
+              {showMobileMenu ? (
+                <CgCodeSlash className="h-8 w-8 p-0.5 text-primary" />
+              ) : (
+                <CgCode className="h-8 w-8 p-0.5 text-primary" />
+              )}
+            </div>
+
+            {showMobileMenu ? (
+              <div className="absolute right-0 top-0 flex translate-y-[81px] flex-col gap-8 rounded-bl-lg border-b border-l border-zinc-500 bg-zinc-900 p-8">
+                {links.map((link, i) => (
+                  <Link key={i} num={i} label={link.label} href={link.href} />
+                ))}
+              </div>
+            ) : null}
+          </nav>
         </div>
       </Container>
     </header>
@@ -51,16 +84,10 @@ export const Navbar = () => {
 };
 
 const Logo = () => {
-  return <Image src={KMlogo} alt={"Logo"} width={40} height={40} />;
-};
-
-const Links = () => {
   return (
-    <div className="flex items-center gap-6">
-      {links.map((link, i) => (
-        <Link key={i} num={i} label={link.label} href={link.href} />
-      ))}
-    </div>
+    <a href="#home">
+      <Image src={KMlogo} alt={"Logo"} width={40} height={40} />
+    </a>
   );
 };
 
@@ -74,7 +101,7 @@ const Link: React.FC<LinkProps> = ({ num, label, href }) => {
   return (
     <a
       href={href}
-      className="h-auto cursor-pointer text-base text-primary hover:text-white"
+      className="h-auto cursor-pointer text-lg text-primary hover:text-white md:text-base"
     >
       <span className="text-white">//</span>
       {" " + label}

@@ -8,6 +8,7 @@ export const Hero = () => {
   return (
     <Container>
       <div
+        id="home"
         className={`flex min-h-dvh w-full flex-col flex-nowrap items-center justify-center gap-6 md:flex-row md:gap-12`}
       >
         <div
