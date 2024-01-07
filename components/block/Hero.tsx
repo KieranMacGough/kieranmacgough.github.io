@@ -14,10 +14,10 @@ export const Hero = () => {
         <div
           className={`flex w-full flex-col justify-center gap-2 md:w-3/5 md:gap-6`}
         >
-          <p className="text-md w-max rounded-lg border border-primary bg-teal-950 p-4 text-primary md:text-xl">
+          <p className="w-max rounded-lg border border-primary bg-teal-950 p-4 text-primary md:text-xl">
             👋 Hi, I&apos;m Kieran MacGough.
           </p>
-          <p className={`text-xl text-white md:text-3xl`}>
+          <p className={`text-2xl text-white md:text-3xl`}>
             I&apos;m a <HighlightedSpan>frontend web developer</HighlightedSpan>
             , specialising in{" "}
             <span className={`inline-block`}>
@@ -27,9 +27,10 @@ export const Hero = () => {
             </span>
             .
           </p>
-          <p className={`md:text-md text-sm text-white`}>
+          <p className={` text-white`}>
             Self-taught, with 1+ years industry experience. Keep scrolling for
-            my tech stack knowledge, work experience and personal projects.
+            my tech stack knowledge, work experience, personal projects and how
+            to get in touch.
           </p>
         </div>
         <div className="flex w-auto p-4 md:items-center md:justify-center md:p-20">
