@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import KMlogo from "../../images/KmLogo.png";
 import { Container } from "../ui/Container";
+import { Anchor } from "../ui/Anchor";
 
 const links = [
   { href: "#tech", label: "Tech Stack" },
@@ -36,11 +37,11 @@ export const Navbar = () => {
   return (
     <header
       className={`${
-        visible ? "top-0" : "top-[-56px]"
+        visible ? "top-0" : "top-[-80px]"
       } fixed z-50 w-full border-b border-b-zinc-500 bg-zinc-800 bg-opacity-65 backdrop-blur-sm backdrop-saturate-150 backdrop-filter transition-[top_ease-in-out] duration-500`}
     >
       <Container paddingTop={false} paddingBottom={false}>
-        <div className="flex h-14 w-full flex-row items-center justify-between py-4 max-[1200px]:px-4 ">
+        <div className="flex h-20 w-full flex-row items-center justify-between py-4 max-[1200px]:px-4 ">
           <Logo />
           <Links />
         </div>
@@ -59,7 +60,6 @@ const Links = () => {
       {links.map((link, i) => (
         <Link key={i} num={i} label={link.label} href={link.href} />
       ))}
-      <ResumeButton />
     </div>
   );
 };
@@ -74,18 +74,10 @@ const Link: React.FC<LinkProps> = ({ num, label, href }) => {
   return (
     <a
       href={href}
-      className="h-auto cursor-pointer text-xs text-primary hover:text-white"
+      className="h-auto cursor-pointer text-base text-primary hover:text-white"
     >
       <span className="text-white">//</span>
       {" " + label}
     </a>
-  );
-};
-
-const ResumeButton = () => {
-  return (
-    <button className="me-2 rounded border border-primary bg-gray-900 px-2.5 py-0.5 text-xs  font-medium text-primary hover:bg-primary hover:text-gray-900">
-      Resume
-    </button>
   );
 };

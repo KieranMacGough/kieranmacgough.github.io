@@ -13,7 +13,7 @@ export const Projects = () => {
           className="flex min-h-dvh flex-col items-center justify-center "
         >
           <BlockHeader>Projects</BlockHeader>
-          <ProjectsBlock bgColor="bg-zinc-700" />
+          <ProjectsBlock data={projectData} />
         </div>
       </Container>
     </div>
