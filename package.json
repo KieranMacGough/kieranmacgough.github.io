@@ -1,17 +1,17 @@
 {
   "name": "portfolio-v2",
+  "homepage": "https://kieranmacgough.github.io",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next export",
-    "deploy": "npm run build && touch ./out/.nojekyll && gh-pages -d out -t true"
+    "lint": "next lint"
   },
   "dependencies": {
     "clsx": "^2.1.0",
+    "gh-pages": "^6.1.1",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
