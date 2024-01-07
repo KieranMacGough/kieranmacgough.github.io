@@ -15,11 +15,11 @@ export const Hero = () => {
           className={`flex w-full flex-col justify-center gap-2 md:w-3/5 md:gap-6`}
         >
           <p className="text-md w-max rounded-lg border border-primary bg-teal-950 p-4 text-primary md:text-xl">
-            👋 Hi, I&aposm Kieran MacGough.
+            👋 Hi, I&apos;m Kieran MacGough.
           </p>
           <p className={`text-xl text-white md:text-3xl`}>
-            I&aposm a <HighlightedSpan>frontend web developer</HighlightedSpan>,
-            specialising in{" "}
+            I&apos;m a <HighlightedSpan>frontend web developer</HighlightedSpan>
+            , specialising in{" "}
             <span className={`inline-block`}>
               <HighlightedSpan>{"{ "}</HighlightedSpan>
               React <HighlightedSpan>&&</HighlightedSpan> Typescript
