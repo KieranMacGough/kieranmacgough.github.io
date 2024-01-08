@@ -29,7 +29,7 @@ export const projectData: IProjectData[] = [
     logo: PokedexApp,
     tech: ["React Native", "Javascript", "Expo", "PokeAPI"],
     description:
-      "A Pokedex app for Android, using PokeAPI and a public Figma design. Search and fitler through all 905 Pokemon. See more details, such as locations and type weaknesses.",
+      "A Pokedex app for Android, using PokeAPI and a public Figma design. Search and filter through all 905 Pokemon. See more details, such as locations and type weaknesses.",
     githubLink: "https://github.com/KieranMacGough/Pokedex--React-Native-",
     seeMoreLink: "https://www.youtube.com/watch?v=0UgxlwFYOOc",
   },
