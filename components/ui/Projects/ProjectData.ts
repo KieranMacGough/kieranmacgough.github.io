@@ -20,7 +20,7 @@ export const projectData: IProjectData[] = [
     logo: iRacingWebsite,
     tech: ["NextJs", "Typescript", "Tailwind", "tRPC", "Prisma", "Planetscale"],
     description:
-      "A WIP full-stack website to help iRacing users find out which tracks and cars to purchase on the service. Includes a series comparision feature, to see which tracks or cars are used over multiple series that the user is interested in.",
+      "A WIP full-stack website to help iRacing users find out which tracks and cars to purchase on the service. Includes a series comparison feature, to see which tracks or cars are used over multiple series that the user is interested in.",
     seeMoreLink: "https://iracing-app-73hs.vercel.app/",
   },
   {
