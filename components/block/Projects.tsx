@@ -10,7 +10,7 @@ export const Projects = () => {
       <Container>
         <div
           id="projects"
-          className="flex min-h-dvh flex-col items-center justify-center "
+          className="flex min-h-screen flex-col items-center justify-center "
         >
           <BlockHeader>Projects</BlockHeader>
           <ProjectsBlock data={projectData} />

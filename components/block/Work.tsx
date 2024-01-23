@@ -8,7 +8,7 @@ export const Work = () => {
     <Container>
       <div
         id="work"
-        className="flex min-h-dvh w-full flex-col items-center justify-center"
+        className="flex min-h-screen w-full flex-col items-center justify-center"
       >
         <BlockHeader>Work</BlockHeader>
         <Timeline />

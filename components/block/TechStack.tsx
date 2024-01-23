@@ -69,7 +69,7 @@ export const TechStack = () => {
       <Container>
         <div
           id="tech"
-          className="flex min-h-dvh flex-col items-center justify-center"
+          className="flex min-h-screen flex-col items-center justify-center"
         >
           <BlockHeader>Tech Stack</BlockHeader>
           <div className="flex w-full max-w-3xl flex-1 flex-col flex-wrap justify-center gap-5 rounded-lg border border-primary bg-teal-950 p-5 sm:flex-initial sm:flex-row">

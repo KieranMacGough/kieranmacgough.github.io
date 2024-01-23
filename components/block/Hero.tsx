@@ -9,7 +9,7 @@ export const Hero = () => {
     <Container>
       <div
         id="home"
-        className={`flex min-h-dvh w-full flex-col flex-nowrap items-center justify-center gap-6 md:flex-row md:gap-12`}
+        className={`flex min-h-screen w-full flex-col flex-nowrap items-center justify-center gap-6 md:flex-row md:gap-12`}
       >
         <div
           className={`flex w-full flex-col justify-center gap-2 md:w-3/5 md:gap-6`}
@@ -39,7 +39,7 @@ export const Hero = () => {
             alt={"Logo"}
             width={300}
             height={300}
-            className="md:shadow-heroimagemd shadow-heroimagesm rounded-lg border-2 border-primary/50 md:rotate-12"
+            className="rounded-lg border-2 border-primary/50 shadow-heroimagesm md:rotate-12 md:shadow-heroimagemd"
           />
           ;
         </div>
