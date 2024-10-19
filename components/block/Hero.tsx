@@ -1,8 +1,7 @@
-import React from "react";
 import Image from "next/image";
-import { HighlightedSpan } from "../ui/HighlightedSpan";
 import me from "../../images/me.jpg";
 import { Container } from "../ui/Container";
+import { HighlightedSpan } from "../ui/HighlightedSpan";
 
 export const Hero = () => {
   return (
@@ -18,7 +17,10 @@ export const Hero = () => {
             👋 Hi, I&apos;m Kieran MacGough.
           </p>
           <p className={`text-2xl text-white md:text-3xl`}>
-            I&apos;m a <HighlightedSpan>frontend web developer</HighlightedSpan>
+            I&apos;m a{" "}
+            <HighlightedSpan>
+              mid-level full stack web developer
+            </HighlightedSpan>
             , specialising in{" "}
             <span className={`inline-block`}>
               <HighlightedSpan>{"{ "}</HighlightedSpan>
@@ -28,9 +30,14 @@ export const Hero = () => {
             .
           </p>
           <p className={` text-white`}>
-            Self-taught, with 1+ years industry experience. Keep scrolling for
-            my tech stack knowledge, work experience, personal projects and how
-            to get in touch.
+            Self-taught, with{" "}
+            {Math.floor(
+              (+new Date() - +new Date(2022, 9, 1)) /
+                (1000 * 60 * 60 * 24 * 365.25),
+            )}
+            + years industry experience. Keep scrolling for my tech stack
+            knowledge, work experience, personal projects and how to get in
+            touch.
           </p>
         </div>
         <div className="flex w-auto p-4 md:items-center md:justify-center md:p-20">
